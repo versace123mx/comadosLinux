@@ -1,0 +1,86 @@
+Comandos GNU/Linux
+
+pwd - para saber en que parte del directorio estamos parados.
+
+cd /tmp/ para movernos entre directorios
+
+cd solito nos devuelve a home o raiz de nuestro directorio
+
+cd - nos mueve al directorio anterior al cual estabamos.
+
+cd .. nos mueve entre directorios
+
+ls nos permite listar
+
+ls -la nos lista y nos muesta archivos ocultos
+
+ls -lah nos muestra lo mismo que el anterior solo que mostrado de forma humana
+
+ls -laht lo mismo que el anterior pero mostrando en orden de forma temporal
+
+ls -lahtr lo mismo que el anterior solo que mostrandolo en orden termporal desde el ultimo al primer archivo ditado
+
+du -h /tmp/*  muestra el tamaño de cada archivo de ese directorio
+
+sudo du -sh /tmp/  suma todo el tamaño de los archivos que hay en el directorio tmp
+
+df muestra cuanto ocupa cada espacio de montaje(directorio)
+
+df -h lo mismo que el anterior pero en formato humano los calculos de bits
+
+dfc es un software que hay que instalarlo, pero nos muestra lo mismo que el anterior pero de una forma grafica
+
+history nos muestra un historico de los comandos ejecutados ultimamente en la parte izquierda muestra un numero ese numero se puede utilizar para nuevamente ejecutar el comando de la siguiente manera.
+Ejemplo 563 dfc, lo ejecutamos !563 y nos mostraria lo mismo como teclearamos dfc
+
+!! nos muestra el ultimo comando ejecutado
+
+mkdir para crear directorios
+
+tree comomando para ver los archivos
+
+mkdir -p dir1/dir2  crea el directorio dir1 y dentro dir2 si es que dir1 no existe
+
+touch para crear archivos
+
+rm para remover
+
+rmdir para borar directorio
+
+rm -rf para borrar directorios des forma recursiva
+
+cp para copiar
+
+mv para mover directorio o archivos
+
+cat para ver contenido de un archivo
+
+cat listado.txt | more  para paginar el texto del archivo listado.txt para ambientes no graficos
+
+cat listado.txt | less parecido al anterior pero tambien nos permite buscar un texto expecifico, colocando un /textobuscar
+
+head listado.txt muestra las primeras 10 lineas del listado
+tail listado.txt muestra las ultimas 10 lineas del listado
+
+head -n20 listado.txt mustra las primeras 20 lineas del listado
+tail -n20 listado.txt mustra las ultimas 20 lineas del listado
+
+
+wc listado.txt informacion del archivo
+wc -l
+wc -w
+wc -c
+
+
+which ls nos indica donde esta el comando ls por si queremos actualizarlo, cambiarle el nombre etc.
+where is ls parecido al anterior pero con mayor informacion y mas detallado
+find comando de busqueda,archivos,directorios,enlases simbolicos,bloques,tamaño de archivo
+grep imprime las lineas en las cuales se encuentre un patron
+lsusb
+cfdisk
+mbr y gpt para dual boot
+
+whoami  devuelve el nombre del usuario
+hostanem nos devuelve el nombre del equipo
+https://blog.desdelinux.net/mas-de-400-comandos-para-gnulinux-que-deberias-conocer/
+bash devuelve el nombre de usuario,nombre del host
