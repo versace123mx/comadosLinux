@@ -84,3 +84,51 @@ whoami  devuelve el nombre del usuario
 hostanem nos devuelve el nombre del equipo
 https://blog.desdelinux.net/mas-de-400-comandos-para-gnulinux-que-deberias-conocer/
 bash devuelve el nombre de usuario,nombre del host
+
+uname -s  muestra el nombre del sistema operativo (linux,FreBSD,Darwin,AEX)
+uname -r vercion del nucleo
+uname -v vercion del sistema operativo
+uname -n nombre de la maquina
+uname -m arquitectura del nucleo
+uname -a toda la informacion anterior
+
+cat comando para ver el contenido del fichero
+cat -n para ver el numero de lineas
+cat -b para ver el numero de lineas pero no nulas
+tac lo mismo que cat pero a la inversa
+
+nl como cat -b
+nl -ba lineas vacias
+
+head para ver las primeras 10 lineas de un archivo
+head -n 20 para ver las primeras 20 lineas de un archivo
+tail para ver las ultimas 10 lineas de un archivo
+tail -n 20 para ver las primeras 20 lineas de un archivo
+tail -f lectura continua por ejmplo para estar biendo un log
+
+wc contador de palabras
+wc muestra numero de lineas,palabras,caracteres
+wc -p numero de lineas
+wc -w numero de palabras
+wc -m numero de caracteres
+
+
+sort comando para ordernar de forma alfabetica
+sort -r orden inverso
+sort -n ordernar por numeros si es que la columna tiene numeros
+sort -k num ordernar por el numero de columnas si es que hay columnas en el archivo
+sort -t sep ordenar si el archivo tiene un separador Ejemplo:hola
+sort -f ordernar ignorando mayusculas y minusculas
+
+uniq comando que no muestra las lineas repetidas las repeticiones deben de ser contiguas, no en diferente orden,para esto tambien podemos utilizar sort
+uniq -c muestra en numero de veces que se repite una palabra o cadena
+uniq -d solo muestra las lineas duplicadas
+uniq -u muestra las lineas no duplicadas
+
+cut comando para cortar
+cut -d
+cut -c
+
+split dividir un fichero en mas pequeños
+split -l 20 dividirlo en lineas pero lo separa en ficheros diferentes
+split -b dividir por tamaño
