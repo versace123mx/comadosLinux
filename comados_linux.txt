@@ -35,6 +35,16 @@ Ejemplo 563 dfc, lo ejecutamos !563 y nos mostraria lo mismo como teclearamos df
 
 !! nos muestra el ultimo comando ejecutado
 
+history -c para borrar el historial de comandos
+
+cat /dev/null .bash_history para borrar el archivo de historial
+
+alias mostrar='ls' <- esto es para tener un alias de un comando
+
+alias ver los alias
+
+unalias nombre alias  <- para eliminar los alias
+
 mkdir para crear directorios
 
 tree comomando para ver los archivos
@@ -132,3 +142,60 @@ cut -c
 split dividir un fichero en mas pequeños
 split -l 20 dividirlo en lineas pero lo separa en ficheros diferentes
 split -b dividir por tamaño
+
+
+top ver los procesos en tiempo de ejecucion
+
+ps aux ver lo que se esta ejecutando
+
+kill idproceso
+
+ps aux | grep iceweasel
+
+iceweasel & mandas a llamar al iceweasel desde consola y dejas el prompt para pode trabajar desde la shell sin que el proceso utilice la shell por completo
+en /root hay un archivo .bash_history en el cual podemos ver el historial de comandos presionados
+
+tail .bash_history
+
+cat .bash_history
+
+lsusb ver las usb conectadas al equipo
+
+lspci ver las conexion al puerto psi
+
+lshw muestra detalles del sistema
+
+man cp <- muestra informacion sobre el comando
+
+info mv <- muestra informacion sobre el comando
+
+arch <- arquitectura
+
+cat /proc/cpuinfo <- para ver informacion sobre el cpu
+
+cat /proc/meminfo <- para ver informacion sobre la memoria
+
+free <- ver memoria ram
+
+fdisk -l <- para ver informacion del disco duro
+
+df -h <- alamacenamiento del disco duro y cuanto queda disponible
+
+psswd <-  paa cambiar el password del usuario
+
+nano /etc/hostname <- para cambiar el nombre del host
+host name
+
+iwconfig <- para ver las interfaces inalambricas
+
+netstat
+
+netstat -tupac <- para saber que programas estan en escuchas de red
+
+netstat -ntpl <- para ver los puertos abiertos
+
+route -p <-  para saber el ip del gateway
+
+reboot <- reiniciar el sistema
+ 
+poweroff <- apagar el sistema
