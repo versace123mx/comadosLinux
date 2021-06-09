@@ -199,3 +199,7 @@ route -p <-  para saber el ip del gateway
 reboot <- reiniciar el sistema
  
 poweroff <- apagar el sistema
+
+iceweasel & <- llama al programa iceweasel y deja la consola disponible para trabajar
+
+cat /etc/passwd <- para ver los usuarios del sistema
