@@ -200,6 +200,13 @@ reboot <- reiniciar el sistema
  
 poweroff <- apagar el sistema
 
+apropos sudo  <-  Cada página de manual tiene una breve descripción disponible dentro de ella.
+
 iceweasel & <- llama al programa iceweasel y deja la consola disponible para trabajar
 
 cat /etc/passwd <- para ver los usuarios del sistema
+
+man curl <-  para obtener informacion de la herramienta curl ya que no sabemos que es curl
+
+curl --help    <- para mirar las opcciones de parametros para curl, cuando ya sabemos que es curl, pero no recordamos el parametro o que parametro utilizar
+curl -h
